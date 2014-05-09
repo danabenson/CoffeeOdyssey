@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{2207fc64-e3c6-4cd7-bbca-59a61ca05da6}</ProjectGuid>
+        <ProjectHome />
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile>server.js</StartupFile>
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="index.html" />
+        <Content Include="favicon.ico" />
+        <Content Include="map.json" />
+        <Content Include="package.json" />
+        <Content Include="README.md" />
+        <Compile Include="server.js" />
+        <Content Include=".idea\compiler.xml" />
+        <Content Include=".idea\encodings.xml" />
+        <Content Include=".idea\misc.xml" />
+        <Content Include=".idea\modules.xml" />
+        <Content Include=".idea\vcs.xml" />
+        <Content Include=".idea\workspace.xml" />
+        <Content Include="assets\data.json" />
+        <Compile Include="lib\corruption.js" />
+        <Compile Include="lib\daynight.js" />
+        <Compile Include="lib\earthquake.js" />
+        <Compile Include="lib\logger.js" />
+        <Compile Include="lib\map.js" />
+        <Compile Include="lib\npcs.js" />
+        <Compile Include="lib\players.js" />
+        <Compile Include="lib\terrain.js" />
+        <Content Include="resources\busy-screenshot.png" />
+        <Content Include="resources\screenshot.png" />
+        <Content Include="resources\map-source.gif" />
+        <Content Include=".idea\copyright\profiles_settings.xml" />
+        <Content Include=".idea\scopes\scope_settings.xml" />
+        <Content Include="assets\images\mine.png" />
+        <Compile Include="assets\scripts\engine.js" />
+        <Compile Include="assets\scripts\excanvas.js" />
+        <Compile Include="assets\scripts\jquery-2.1.0.js" />
+        <Compile Include="assets\scripts\jquery.tipsy.js" />
+        <Compile Include="assets\scripts\underscore.js" />
+        <Content Include="assets\styles\main.css" />
+        <Content Include="assets\styles\tipsy.css" />
+        <Content Include="assets\tilesets\characters-32x48.png" />
+        <Content Include="assets\tilesets\heart-32x32.png" />
+        <Content Include="assets\tilesets\inventory-32x32.png" />
+        <Content Include="assets\tilesets\monsters-32x32.png" />
+        <Content Include="assets\tilesets\terrain-32x32.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include=".git" />
+        <Folder Include=".git\hooks" />
+        <Folder Include=".git\info" />
+        <Folder Include=".git\logs" />
+        <Folder Include=".git\logs\refs" />
+        <Folder Include=".git\logs\refs\heads" />
+        <Folder Include=".git\logs\refs\remotes" />
+        <Folder Include=".git\logs\refs\remotes\origin" />
+        <Folder Include=".git\objects" />
+        <Folder Include=".git\objects\01" />
+        <Folder Include=".git\objects\0e" />
+        <Folder Include=".git\objects\15" />
+        <Folder Include=".git\objects\1e" />
+        <Folder Include=".git\objects\1f" />
+        <Folder Include=".git\objects\20" />
+        <Folder Include=".git\objects\27" />
+        <Folder Include=".git\objects\3a" />
+        <Folder Include=".git\objects\41" />
+        <Folder Include=".git\objects\42" />
+        <Folder Include=".git\objects\50" />
+        <Folder Include=".git\objects\51" />
+        <Folder Include=".git\objects\53" />
+        <Folder Include=".git\objects\54" />
+        <Folder Include=".git\objects\5b" />
+        <Folder Include=".git\objects\5e" />
+        <Folder Include=".git\objects\5f" />
+        <Folder Include=".git\objects\62" />
+        <Folder Include=".git\objects\68" />
+        <Folder Include=".git\objects\6e" />
+        <Folder Include=".git\objects\70" />
+        <Folder Include=".git\objects\76" />
+        <Folder Include=".git\objects\7a" />
+        <Folder Include=".git\objects\80" />
+        <Folder Include=".git\objects\81" />
+        <Folder Include=".git\objects\83" />
+        <Folder Include=".git\objects\85" />
+        <Folder Include=".git\objects\8b" />
+        <Folder Include=".git\objects\8c" />
+        <Folder Include=".git\objects\8e" />
+        <Folder Include=".git\objects\94" />
+        <Folder Include=".git\objects\95" />
+        <Folder Include=".git\objects\9a" />
+        <Folder Include=".git\objects\a3" />
+        <Folder Include=".git\objects\a6" />
+        <Folder Include=".git\objects\a8" />
+        <Folder Include=".git\objects\ac" />
+        <Folder Include=".git\objects\ad" />
+        <Folder Include=".git\objects\b1" />
+        <Folder Include=".git\objects\b2" />
+        <Folder Include=".git\objects\b9" />
+        <Folder Include=".git\objects\c5" />
+        <Folder Include=".git\objects\cb" />
+        <Folder Include=".git\objects\cd" />
+        <Folder Include=".git\objects\cf" />
+        <Folder Include=".git\objects\d3" />
+        <Folder Include=".git\objects\e4" />
+        <Folder Include=".git\objects\e8" />
+        <Folder Include=".git\objects\ee" />
+        <Folder Include=".git\objects\f1" />
+        <Folder Include=".git\objects\f2" />
+        <Folder Include=".git\objects\f4" />
+        <Folder Include=".git\objects\f5" />
+        <Folder Include=".git\objects\f9" />
+        <Folder Include=".git\objects\fa" />
+        <Folder Include=".git\objects\info" />
+        <Folder Include=".git\objects\pack" />
+        <Folder Include=".git\refs" />
+        <Folder Include=".git\refs\heads" />
+        <Folder Include=".git\refs\remotes" />
+        <Folder Include=".git\refs\remotes\origin" />
+        <Folder Include=".git\refs\tags" />
+        <Folder Include=".idea" />
+        <Folder Include=".idea\copyright" />
+        <Folder Include=".idea\scopes" />
+        <Folder Include="assets" />
+        <Folder Include="assets\images" />
+        <Folder Include="assets\scripts" />
+        <Folder Include="assets\sound" />
+        <Folder Include="assets\styles" />
+        <Folder Include="assets\tilesets" />
+        <Folder Include="lib" />
+        <Folder Include="resources" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>
