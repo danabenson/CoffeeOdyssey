@@ -1,0 +1,200 @@
+html {
+    user-select: none;
+    -webkit-user-select: none;
+}
+body {
+    font-family: arial;
+    font-size: 13px;
+    background: black;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+#page {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+}
+#gamefield {
+    text-align: left;
+}
+#messagefield {
+    text-align: left;
+    color: #fff;
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
+    width: 33%;
+    height: 200px;
+}
+#inventoryfield {
+    right: 32px;
+    top: 16px;
+    width: 134px;
+    position: absolute;
+}
+#inventoryfield h5 {
+    margin: 0 0 10px 0;
+    padding: 0px;
+    text-align: center;
+    text-shadow: 0 2px 2px #000;
+    font-size: 16px;
+}
+#inventoryfield .inventory {
+    color: #fff;
+    background: rgba(0,0,0,0.75);
+    border-radius: 6px;
+    padding: 10px;
+}
+#inventoryfield .inventory-display {
+    text-align: right;
+    padding-right: 16px;
+    height: 20px;
+    font-size: 13px;
+    font-family: Consolas, monospace;
+}
+#messages {
+    color: white;
+    display: block;
+    font-family: Consolas, monospace;
+    overflow: auto;
+    font-size: 12px;
+    height: 160px;
+}
+#clock {
+    position: absolute;
+    right: 8px;
+    bottom: 6px;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    text-shadow: 0px 1px 1px #000;
+}
+#message-box {
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 6px;
+}
+#messages, input {
+    user-select: auto;
+    -webkit-user-select: auto;
+}
+#messages .username {
+    color: #eee;
+}
+#messages .server .username {
+    color: #ee2c2c;
+}
+#messages .help .username {
+    color: #5f5ff0;
+}
+#messages .help .content {
+    color: #ccc;
+}
+#messages .self .username,
+#messages .self .content {
+    color: #999;
+}
+#messages .client .username {
+    color: #ee9e2c;
+}
+#messages .user .username {
+    color: #2c83ee;
+}
+#message-input {
+    width: 100%;
+    border: 0px;
+    color: #fff;
+    background-color: transparent;
+}
+#message-send {
+    display: none;
+}
+#nametags {
+    position: absolute;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: arial;
+}
+#nametags .name {
+    position: absolute;
+    width: 160px;
+    text-align: center;
+    opacity: 0.75;
+    padding-top: 4px;
+}
+#nametags .name span {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 3px 6px;
+    border-radius: 12px;
+}
+#nametags .name span.monster {
+    color: #e87b06;
+}
+#hearts {
+    position: absolute;
+    width: 100%;
+    bottom: 55px;
+}
+#hearts .holder {
+    margin: 0 auto;
+    width: 290;
+    border-radius: 6px;
+}
+#hearts .holder .heart {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url("/assets/tilesets/heart-32x32.png");    
+}
+#controls {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+#controls .holder {
+    margin: 0 auto;
+    width: 290px;
+    background: rgba(0, 0, 0, 0.75);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    height: 32px;
+    padding: 8px 0 10px 0;
+}
+#controls .holder .button {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    text-align: left;
+    text-shadow: 0 2px 2px #000;
+    border: 2px solid #333;
+}
+#controls .wood-wall {
+    background-image: url("/assets/tilesets/terrain-32x32.png");
+    background-position: 0px -288px;
+}
+#controls .wood-floor {
+    background-image: url("/assets/tilesets/terrain-32x32.png");
+    background-position: 0px -320px;
+}
+#controls .stone-wall {
+    background-image: url("/assets/tilesets/terrain-32x32.png");
+    background-position: 0px -352px;
+}
+#controls .stone-floor {
+    background-image: url("/assets/tilesets/terrain-32x32.png");
+    background-position: 0px -384;
+}
+#controls .door {
+    background-image: url("/assets/tilesets/terrain-32x32.png");
+    background-position: 0px -416px;
+}
+#controls .glass {
+    background-image: url("/assets/tilesets/terrain-32x32.png");
+    background-position: 0px -448px;
+}
+#controls .collect {
+    background-image: url("/assets/images/mine.png");
+}
+a {
+    color: orange;
+}
