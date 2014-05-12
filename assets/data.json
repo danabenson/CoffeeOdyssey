@@ -505,6 +505,26 @@
       "becomes": 8,
       "threshold": 0,
       "spawn_npc": false
+    },
+      {
+      "name": "Shallow Water",
+      "mineable": false,
+      "provides": null,
+      "block_player": true,
+      "block_npc": true,
+      "replaceable": false,
+      "becomes": null,
+      "spawn_npc": false
+    },
+    {
+      "name": "Water Threshold",
+      "mineable": false,
+      "provides": null,
+      "block_player": true,
+      "block_npc": true,
+      "replaceable": false,
+      "becomes": null,
+      "spawn_npc": false
     }
   ]
 }

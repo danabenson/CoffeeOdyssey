@@ -1,11 +1,11 @@
 {
-	"name": "Cobalt-Calibur-3",
+	"name": "Coffee Odyssy",
 	"version": "0.4.0",
-	"author": "Thomas Hunter <me@thomashunter.name>",
-	"description": "2D MMO Engine",
+	"author": "Some Hackers",
+	"description": "An epic journey, fueled by caffeine.",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tlhunter/Cobalt-Calibur-3.git"
+		"url": "https://github.com/danabenson/CoffeeOdyssey.git"
 	},
 	"dependencies": {
 		"colors": 			"0.6.x",

@@ -5,7 +5,7 @@ $(function() {
 window.app = {
     // First we download a bunch of our assets
     downloadAssets: function() {
-        app.chat.message('About', 'Cobalt Calibur, by Thomas Hunter (@tlhunter).', 'help');
+        app.chat.message('About', 'Welcome to Coffee Odyssy!', 'help');
         $.when(
             app.graphics.tilesets.download(
                 '/assets/tilesets/inventory-32x32.png',
@@ -125,12 +125,6 @@ window.app = {
                         mapY = j + app.graphics.viewport.y;
                         tile = (mapX >= 0 && mapX < 200 && mapY >= 0 && mapY <= 200) ? app.environment.map.data[mapX][mapY] : null;
                         app.graphics.drawTile(i, j, tile);
-
-                        // Draw Corruption
-                        if (app.environment.corruption.loaded && mapX >= 0 && mapX < app.environment.map.WIDTH_TILE && mapY >= 0 && mapY < app.environment.map.HEIGHT_TILE && app.environment.corruption.data[mapX][mapY] === 1) {
-                            app.graphics.handle.fillStyle = app.environment.map.colors.corruption[Math.floor(Math.random() * app.environment.map.colors.corruption.length)];
-                            app.graphics.drawCorruption(i, j);
-                        }
                     }
                 }
 
@@ -148,16 +142,6 @@ window.app = {
 
                 app.environment.daylight.draw();
             },
-        },
-
-        corruption: {
-            data: [],
-            loaded: false,
-
-            update: function(data) {
-                app.environment.corruption.loaded = true;
-                app.environment.corruption.data = data;
-            }
         },
 
         daylight: {

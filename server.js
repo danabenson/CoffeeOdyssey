@@ -11,7 +11,7 @@ var _           = require('underscore');
 var players     = require('./lib/players.js').setSocket(io);
 var logger      = require('./lib/logger.js');
 var map         = require('./lib/map.js').setHttp(app);
-var corruption  = require('./lib/corruption.js').setMap(map).setSocket(io);
+var mapeditor   = require('./lib/mapeditor.js').setHttp(app);
 var daynight    = require('./lib/daynight.js').setMap(map).setSocket(io);
 var earthquake  = require('./lib/earthquake.js').setMap(map).setSocket(io);
 var terrain     = require('./lib/terrain.js').setMap(map);
@@ -22,7 +22,6 @@ var server_port = parseInt(process.argv[2], 10) || 80; // most OS's will require
 var server_host = 'localhost';
 
 var mongo_connection_string = 'mongodb://127.0.0.1:27017/terraformia';
-
 
 map.connect(mongo_connection_string, function(err) {
     if (err) {
@@ -37,7 +36,6 @@ map.connect(mongo_connection_string, function(err) {
         }
 
         npcs.spawn(80);
-        corruption.execute();
         daynight.execute();
         earthquake.execute();
         npcs.execute();
@@ -68,6 +66,10 @@ app.get('/', function (req, res) {
     res.sendfile(__dirname + '/index.html');
 });
 
+app.get('/mapeditor', function (req, res) {
+    res.sendfile(__dirname + '/mapeditor.html');
+});
+
 app.get('/favicon.ico', function (req, res) {
     res.sendfile(__dirname + '/favicon.ico');
 });
@@ -91,7 +93,6 @@ io.sockets.on('connection', function (socket) {
 
     players.sendData(socket);
     daynight.sendData(socket);
-    corruption.sendData(socket);
     npcs.sendData(socket);
 
     players.handleSocketEvents(socket);
